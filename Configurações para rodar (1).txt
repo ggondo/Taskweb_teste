@@ -1,0 +1,47 @@
+Configurações do servidor
+npm install multer (Caso erro de multer)
+
+npm install simple-git (caso de erro de simple-git)
+
+
+Configurações do cliente
+Set GIT_USERNAME=NOME
+set GIT_EMAIL=seu-email@example.com
+set GIT_TOKEN=seu-token-pessoal
+
+git config --global user.name "Nome do usuário"
+git config --global user.email "seu-email@example.com"
+
+
+Comandos para rodar site e API
+dentro da pasta public rodar o comando Node app.js para rodar a API
+
+Dentro do projeto rodar o comando npm start para rodar o site 
+
+Caso de algum outro erro verificar a presença do diretório uploads dentro de public
+
+para que mais de uma pessoa consiga ajustar a área é necessário que o mesmo gere um token do git
+
+e que seja habilitada a colaboração no diretório do GIT por esta nova pessoa
+
+
+
+
+1. Adicionar o Usuário como Colaborador
+Acesse o GitHub e vá até o repositório https://github.com/Artur-Felicio/teste.
+Clique em Settings (Configurações) no canto superior direito do repositório.
+No menu à esquerda, clique em Collaborators and teams (Colaboradores e equipes).
+Na seção Collaborators (Colaboradores), adicione o usuário Ray como colaborador, digitando o nome de usuário ou o e-mail dele.
+Envie um convite para Ray aceitar.
+2. Aceitar o Convite
+Peça ao usuário Ray para verificar o e-mail dele e aceitar o convite para se tornar colaborador do repositório. Ele pode precisar fazer login no GitHub e aceitar o convite diretamente na interface do site.
+
+3. Verificar as Permissões
+Certifique-se de que Ray tenha permissões de escrita no repositório. Como colaborador, ele deve ter permissão para fazer push de commits. Se precisar de permissões mais altas, como administrador, você pode ajustar isso nas configurações de colaboradores.
+
+4. Testar o Acesso
+Depois que Ray aceitar o convite e tiver as permissões corretas, ele deve ser capaz de fazer commit e push para o repositório. Ele pode testar o acesso com os seguintes comandos:  
+cd /caminho/para/o/repo-local
+git add .
+git commit -m "Testando acesso de Ray"
+git push origin main
